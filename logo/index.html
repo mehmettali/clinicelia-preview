@@ -2,117 +2,230 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Clinic Elia — Logo Konseptleri</title>
 <style>
-:root{--teal:#0F6B63;--deep:#0A4F49;--dark:#1a2b2a;--slate:#54636b;--mist:#e2e8e7;--pale:#f7f9f9}
+:root{--teal:#0F6B63;--teal2:#12857b;--deep:#0A4F49;--dark:#1a2b2a;--slate:#54636b;--mist:#e2e8e7;--pale:#f7f9f9}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--pale);color:var(--dark);line-height:1.6;padding:40px 20px}
-.wrap{max-width:1000px;margin:0 auto}
-h1{font-size:1.9rem;color:var(--deep);margin-bottom:6px}
-.sub{color:var(--slate);margin-bottom:36px}
-.c{background:#fff;border:1px solid var(--mist);border-radius:16px;padding:30px;margin-bottom:28px;box-shadow:0 1px 2px rgba(10,79,73,.05),0 8px 24px rgba(10,79,73,.05)}
-.c h2{font-size:1.15rem;color:var(--deep);margin-bottom:4px}
-.c .idea{color:var(--slate);font-size:.93rem;margin-bottom:22px}
-.row{display:flex;gap:28px;align-items:center;flex-wrap:wrap;padding:22px;border-radius:12px;background:var(--pale);margin-bottom:12px}
-.row.dark{background:var(--dark)}
-.row.dark .wm-main{color:#fff}.row.dark .wm-sub{color:#9fb3ae}
-.lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--slate);font-weight:700;margin-bottom:10px}
-.lock{display:flex;align-items:center;gap:14px}
-.wm-main{font-size:1.5rem;font-weight:300;color:var(--deep);letter-spacing:.06em;line-height:1.1}
-.wm-main b{font-weight:700}
-.wm-sub{font-size:.62rem;text-transform:uppercase;letter-spacing:.18em;color:var(--slate);margin-top:3px}
-.fav{display:flex;gap:14px;align-items:flex-end}
-.fav div{text-align:center}.fav span{display:block;font-size:.65rem;color:var(--slate);margin-top:5px}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--pale);color:var(--dark);line-height:1.6;padding:44px 20px}
+.wrap{max-width:1080px;margin:0 auto}
+h1{font-size:2rem;color:var(--deep);letter-spacing:-.01em}
+.sub{color:var(--slate);margin:8px 0 34px;max-width:72ch}
+h2.sec{font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);font-weight:800;margin:40px 0 14px;padding-bottom:9px;border-bottom:2px solid var(--mist)}
+.c{background:#fff;border:1px solid var(--mist);border-radius:16px;padding:26px;margin-bottom:20px;box-shadow:0 1px 2px rgba(10,79,73,.04),0 10px 26px rgba(10,79,73,.05)}
+.c h3{font-size:1.1rem;color:var(--deep)}
+.c .idea{color:var(--slate);font-size:.92rem;margin:4px 0 20px;max-width:70ch}
+.pill{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:#e4f1ee;color:var(--deep);border-radius:20px;padding:3px 11px;margin-left:8px;vertical-align:middle}
+.band{display:flex;gap:30px;align-items:center;flex-wrap:wrap;padding:22px;border-radius:12px;background:var(--pale);margin-bottom:10px}
+.band.dark{background:var(--dark)}
+.lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--slate);font-weight:700;margin:16px 0 9px}
+.lock{display:flex;align-items:center;gap:13px}
+.lock.stack{flex-direction:column;gap:9px;text-align:center}
+.wm{font-size:1.45rem;font-weight:300;color:var(--deep);letter-spacing:.06em;line-height:1.1;white-space:nowrap}
+.wm b{font-weight:700}
+.wms{font-size:.6rem;text-transform:uppercase;letter-spacing:.18em;color:var(--slate);margin-top:3px}
+.dark .wm{color:#fff}.dark .wms{color:#9fb3ae}
+.sizes{display:flex;gap:16px;align-items:flex-end}
+.sizes div{text-align:center}.sizes span{display:block;font-size:.64rem;color:var(--slate);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px}
+.sw{border:1px solid var(--mist);border-radius:11px;padding:18px;text-align:center}
+.sw span{display:block;font-size:.66rem;color:var(--slate);margin-top:9px;letter-spacing:.04em}
+/* mockup */
+.bro{border:1px solid var(--mist);border-radius:11px;overflow:hidden;background:#fff}
+.bro .bar{background:#eceff0;padding:8px 12px;display:flex;align-items:center;gap:8px}
+.dot{width:9px;height:9px;border-radius:50%;background:#cfd6d7}
+.tab{background:#fff;border-radius:7px 7px 0 0;padding:5px 13px;display:flex;align-items:center;gap:7px;font-size:.73rem;color:var(--dark);margin-left:6px}
+.hdr{padding:13px 18px;display:flex;align-items:center;gap:22px;border-bottom:1px solid var(--mist)}
+.hdr nav{display:flex;gap:16px;margin-left:auto;font-size:.76rem;color:var(--slate);font-weight:600}
+.card{width:300px;height:176px;border-radius:12px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 26px rgba(10,79,73,.14)}
+.card.t{background:var(--teal);color:#fff}
+.card .nm{font-size:.84rem;font-weight:700;letter-spacing:.02em}
+.card .rl{font-size:.66rem;opacity:.82;letter-spacing:.06em}
+.card .ct{font-size:.63rem;opacity:.82;line-height:1.7}
+.av{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.avc{width:60px;height:60px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:var(--teal)}
+.don{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.don div{border:1px solid var(--mist);border-radius:11px;padding:14px;text-align:center;font-size:.76rem;color:var(--slate)}
+.don b{display:block;margin-bottom:7px;font-size:.84rem}
+.ok b{color:#0F6B63}.no b{color:#b5452f}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:#fff;border:1px solid var(--mist);border-radius:11px;overflow:hidden}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--mist)}
+th{background:var(--deep);color:#fff;font-weight:600;font-size:.78rem;letter-spacing:.03em}
+tr:last-child td{border-bottom:none}
+.note{background:#e4f1ee;border-left:4px solid var(--teal);border-radius:9px;padding:13px 16px;font-size:.89rem;color:var(--deep);margin-top:16px}
+@media(max-width:620px){.band{gap:18px}.wm{font-size:1.2rem}}
 </style></head><body><div class="wrap">
+
 <h1>Clinic Elia — Logo Konseptleri</h1>
-<p class="sub"><strong>Fikir:</strong> “Elia” Yunanca <em>zeytin</em> (Ελιά). Akdeniz kökü + büyüme/yenilenme — saçı birebir resmetmeden tüm hizmetlere uyar. Palet siteden alındı: <code>#0F6B63</code> / <code>#0A4F49</code>.</p>
+<p class="sub"><strong>Fikir:</strong> “Elia” Yunanca <em>zeytin</em> (Ελιά). Akdeniz kökü + büyüme ve yenilenme — saçı birebir resmetmeden saç ekimi, plastik cerrahi, estetik ve kilo hizmetlerinin <strong>hepsine</strong> uyar. Palet siteden alındı: <code>#0F6B63</code> · <code>#0A4F49</code> · <code>#54636b</code>.</p>
 
-<!-- A -->
-<div class="c"><h2>A · Mühür — zeytin yaprağı</h2>
-<p class="idea">Dairesel mühür, içinde tek zeytin yaprağı. Sakin, kurumsal, “köklü klinik” hissi. Küçük boyutta en okunaklı olan.</p>
-<div class="row">
- <div class="lock">
-  <svg width="68" height="68" viewBox="0 0 72 72" role="img" aria-label="Clinic Elia amblem">
-   <circle cx="36" cy="36" r="34" fill="#0F6B63"/>
-   <path d="M20 50 C20 32 32 20 52 20 C52 38 40 50 20 50 Z" fill="#fff" opacity=".95"/>
-   <path d="M20 50 L52 20" stroke="#0F6B63" stroke-width="2.2" stroke-linecap="round"/>
-  </svg>
-  <div><div class="wm-main">CLINIC <b>ELIA</b></div><div class="wm-sub">Istanbul · Türkiye</div></div>
- </div>
-</div>
-<div class="row dark">
- <div class="lock">
-  <svg width="68" height="68" viewBox="0 0 72 72"><circle cx="36" cy="36" r="34" fill="#fff"/>
-   <path d="M20 50 C20 32 32 20 52 20 C52 38 40 50 20 50 Z" fill="#0F6B63"/>
-   <path d="M20 50 L52 20" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
-  <div><div class="wm-main">CLINIC <b>ELIA</b></div><div class="wm-sub">Istanbul · Türkiye</div></div>
- </div>
-</div>
-<div class="lbl" style="margin-top:18px">Favicon ölçeği</div>
-<div class="fav">
- <div><svg width="48" height="48" viewBox="0 0 72 72"><circle cx="36" cy="36" r="34" fill="#0F6B63"/><path d="M20 50 C20 32 32 20 52 20 C52 38 40 50 20 50 Z" fill="#fff"/><path d="M20 50 L52 20" stroke="#0F6B63" stroke-width="2.6" stroke-linecap="round"/></svg><span>48px</span></div>
- <div><svg width="32" height="32" viewBox="0 0 72 72"><circle cx="36" cy="36" r="34" fill="#0F6B63"/><path d="M20 50 C20 32 32 20 52 20 C52 38 40 50 20 50 Z" fill="#fff"/><path d="M20 50 L52 20" stroke="#0F6B63" stroke-width="3" stroke-linecap="round"/></svg><span>32px</span></div>
- <div><svg width="20" height="20" viewBox="0 0 72 72"><circle cx="36" cy="36" r="34" fill="#0F6B63"/><path d="M20 50 C20 32 32 20 52 20 C52 38 40 50 20 50 Z" fill="#fff"/><path d="M20 50 L52 20" stroke="#0F6B63" stroke-width="4" stroke-linecap="round"/></svg><span>20px</span></div>
+<!-- SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="mA" viewBox="0 0 72 72">
+   <circle cx="36" cy="36" r="34" fill="var(--mb)"/>
+   <path d="M20 50 C20 32 32 20 52 20 C52 38 40 50 20 50 Z" fill="var(--mf)"/>
+   <path d="M20 50 L52 20" stroke="var(--mb)" stroke-width="2.4" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="mB" viewBox="0 0 76 72">
+   <path d="M38 64 C38 44 26 32 10 30 C10 50 22 62 38 64 Z" fill="var(--mf2)"/>
+   <path d="M38 64 C38 40 50 26 66 24 C66 46 54 62 38 64 Z" fill="var(--mf)"/>
+   <path d="M38 67 L38 44" stroke="var(--mf)" stroke-width="3" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="mC" viewBox="0 0 72 72">
+   <rect x="2" y="2" width="68" height="68" rx="18" fill="var(--mb)"/>
+   <path d="M19 53 C19 33 32 19 54 19 C54 39 41 53 19 53 Z" fill="var(--mf)"/>
+   <g stroke="var(--mb)" stroke-width="1.9" stroke-linecap="round">
+     <path d="M19 53 L54 19"/><path d="M31 41 L30 30"/><path d="M38 34 L37 23"/><path d="M30 42 L41 43"/><path d="M37 35 L48 36"/></g>
+ </symbol>
+ <symbol id="mD" viewBox="0 0 72 72">
+   <circle cx="36" cy="36" r="34" fill="none" stroke="var(--mb)" stroke-width="3"/>
+   <circle cx="36" cy="36" r="28" fill="var(--mb)"/>
+   <text x="36" y="45" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="27" font-weight="700" fill="var(--mf)" letter-spacing="-1">CE</text>
+   <path d="M24 56 C30 52 42 52 48 56" stroke="var(--mf)" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".75"/>
+ </symbol>
+ <symbol id="mE" viewBox="0 0 72 72">
+   <path d="M14 56 C14 30 30 14 58 14 C58 40 42 56 14 56 Z" fill="var(--mf)"/>
+   <path d="M14 56 L58 14" stroke="var(--mb)" stroke-width="2.6" stroke-linecap="round"/>
+   <circle cx="47" cy="25" r="5" fill="var(--mb)"/>
+ </symbol>
+</defs></svg>
+
+<h2 class="sec">Konseptler</h2>
+
+<div class="c"><h3>A · Mühür — zeytin yaprağı <span class="pill">önerilen</span></h3>
+<p class="idea">Dairesel mühür, içinde tek zeytin yaprağı. Sakin, kurumsal, “köklü klinik” hissi. Küçük boyutta en okunaklı olan — favicon ve avatar performansı en güçlü.</p>
+<div class="band"><div class="lock"><svg width="64" height="64" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div>
+ <div class="lock stack"><svg width="54" height="54" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><div><div class="wm" style="font-size:1.1rem">CLINIC <b>ELIA</b></div><div class="wms">Istanbul</div></div></div>
+ <svg width="52" height="52" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg></div>
+<div class="band dark"><div class="lock"><svg width="64" height="64" style="--mb:#fff;--mf:#0F6B63"><use href="#mA"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div></div>
+<div class="lbl">Küçük ölçek</div>
+<div class="sizes">
+ <div><svg width="48" height="48" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><span>48</span></div>
+ <div><svg width="32" height="32" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><span>32</span></div>
+ <div><svg width="20" height="20" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><span>20</span></div>
+ <div><svg width="16" height="16" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><span>16</span></div>
 </div></div>
 
-<!-- B -->
-<div class="c"><h2>B · İki yaprak — büyüme</h2>
-<p class="idea">Kaptan yükselen iki yaprak: bakım ve yenilenme. Kapsız, daha hafif ve modern; yatay kullanımda zarif.</p>
-<div class="row">
- <div class="lock">
-  <svg width="72" height="68" viewBox="0 0 76 72" role="img" aria-label="Clinic Elia amblem">
-   <path d="M38 64 C38 44 26 32 10 30 C10 50 22 62 38 64 Z" fill="#12857b"/>
-   <path d="M38 64 C38 40 50 26 66 24 C66 46 54 62 38 64 Z" fill="#0F6B63"/>
-   <path d="M38 66 L38 44" stroke="#0A4F49" stroke-width="3" stroke-linecap="round"/>
-  </svg>
-  <div><div class="wm-main">CLINIC <b>ELIA</b></div><div class="wm-sub">Istanbul · Türkiye</div></div>
- </div>
-</div>
-<div class="row dark">
- <div class="lock">
-  <svg width="72" height="68" viewBox="0 0 76 72">
-   <path d="M38 64 C38 44 26 32 10 30 C10 50 22 62 38 64 Z" fill="#4fb3a7"/>
-   <path d="M38 64 C38 40 50 26 66 24 C66 46 54 62 38 64 Z" fill="#fff"/>
-   <path d="M38 66 L38 44" stroke="#9fb3ae" stroke-width="3" stroke-linecap="round"/></svg>
-  <div><div class="wm-main">CLINIC <b>ELIA</b></div><div class="wm-sub">Istanbul · Türkiye</div></div>
- </div>
-</div>
-<div class="lbl" style="margin-top:18px">Favicon ölçeği</div>
-<div class="fav">
- <div><svg width="48" height="48" viewBox="0 0 76 72"><path d="M38 64 C38 44 26 32 10 30 C10 50 22 62 38 64 Z" fill="#12857b"/><path d="M38 64 C38 40 50 26 66 24 C66 46 54 62 38 64 Z" fill="#0F6B63"/></svg><span>48px</span></div>
- <div><svg width="32" height="32" viewBox="0 0 76 72"><path d="M38 64 C38 44 26 32 10 30 C10 50 22 62 38 64 Z" fill="#12857b"/><path d="M38 64 C38 40 50 26 66 24 C66 46 54 62 38 64 Z" fill="#0F6B63"/></svg><span>32px</span></div>
- <div><svg width="20" height="20" viewBox="0 0 76 72"><path d="M38 64 C38 44 26 32 10 30 C10 50 22 62 38 64 Z" fill="#12857b"/><path d="M38 64 C38 40 50 26 66 24 C66 46 54 62 38 64 Z" fill="#0F6B63"/></svg><span>20px</span></div>
+<div class="c"><h3>B · İki yaprak — büyüme</h3>
+<p class="idea">Kaptan yükselen iki yaprak: bakım ve yenilenme. Kapsız, hafif ve modern; yatay kullanımda zarif. Çok küçük boyutta A ve C kadar güçlü değil.</p>
+<div class="band"><div class="lock"><svg width="66" height="62" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div>
+ <div class="lock stack"><svg width="54" height="51" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg><div class="wm" style="font-size:1.1rem">CLINIC <b>ELIA</b></div></div></div>
+<div class="band dark"><div class="lock"><svg width="66" height="62" style="--mf:#fff;--mf2:#4fb3a7"><use href="#mB"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div></div>
+<div class="lbl">Küçük ölçek</div>
+<div class="sizes">
+ <div><svg width="48" height="45" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg><span>48</span></div>
+ <div><svg width="32" height="30" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg><span>32</span></div>
+ <div><svg width="20" height="19" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg><span>20</span></div>
 </div></div>
 
-<!-- C -->
-<div class="c"><h2>C · Yaprak + damarlar</h2>
-<p class="idea">Yaprak damarları saç yönü/büyüme çizgilerini çağrıştırır — ince bir gönderme, klişe değil. Yuvarlak kare, uygulama ikonu gibi de çalışır.</p>
-<div class="row">
- <div class="lock">
-  <svg width="68" height="68" viewBox="0 0 72 72" role="img" aria-label="Clinic Elia amblem">
-   <rect x="2" y="2" width="68" height="68" rx="18" fill="#0A4F49"/>
-   <path d="M19 53 C19 33 32 19 54 19 C54 39 41 53 19 53 Z" fill="#fff" opacity=".96"/>
-   <g stroke="#0A4F49" stroke-width="1.9" stroke-linecap="round">
-    <path d="M19 53 L54 19"/><path d="M31 41 L30 30"/><path d="M38 34 L37 23"/><path d="M30 42 L41 43"/><path d="M37 35 L48 36"/>
-   </g>
-  </svg>
-  <div><div class="wm-main">CLINIC <b>ELIA</b></div><div class="wm-sub">Istanbul · Türkiye</div></div>
- </div>
-</div>
-<div class="row dark">
- <div class="lock">
-  <svg width="68" height="68" viewBox="0 0 72 72">
-   <rect x="2" y="2" width="68" height="68" rx="18" fill="#fff"/>
-   <path d="M19 53 C19 33 32 19 54 19 C54 39 41 53 19 53 Z" fill="#0F6B63"/>
-   <g stroke="#fff" stroke-width="1.9" stroke-linecap="round">
-    <path d="M19 53 L54 19"/><path d="M31 41 L30 30"/><path d="M38 34 L37 23"/><path d="M30 42 L41 43"/><path d="M37 35 L48 36"/></g></svg>
-  <div><div class="wm-main">CLINIC <b>ELIA</b></div><div class="wm-sub">Istanbul · Türkiye</div></div>
- </div>
-</div>
-<div class="lbl" style="margin-top:18px">Favicon ölçeği</div>
-<div class="fav">
- <div><svg width="48" height="48" viewBox="0 0 72 72"><rect x="2" y="2" width="68" height="68" rx="18" fill="#0A4F49"/><path d="M19 53 C19 33 32 19 54 19 C54 39 41 53 19 53 Z" fill="#fff"/><path d="M19 53 L54 19" stroke="#0A4F49" stroke-width="2.4" stroke-linecap="round"/></svg><span>48px</span></div>
- <div><svg width="32" height="32" viewBox="0 0 72 72"><rect x="2" y="2" width="68" height="68" rx="18" fill="#0A4F49"/><path d="M19 53 C19 33 32 19 54 19 C54 39 41 53 19 53 Z" fill="#fff"/><path d="M19 53 L54 19" stroke="#0A4F49" stroke-width="2.8" stroke-linecap="round"/></svg><span>32px</span></div>
- <div><svg width="20" height="20" viewBox="0 0 72 72"><rect x="2" y="2" width="68" height="68" rx="18" fill="#0A4F49"/><path d="M19 53 C19 33 32 19 54 19 C54 39 41 53 19 53 Z" fill="#fff"/><path d="M19 53 L54 19" stroke="#0A4F49" stroke-width="3.4" stroke-linecap="round"/></svg><span>20px</span></div>
+<div class="c"><h3>C · Yaprak + damarlar</h3>
+<p class="idea">Yaprak damarları saç yönü ve büyüme çizgilerini çağrıştırır — ince bir gönderme, klişe değil. Yuvarlak kare formu uygulama ikonu olarak da çalışır.</p>
+<div class="band"><div class="lock"><svg width="64" height="64" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div>
+ <div class="lock stack"><svg width="54" height="54" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg><div class="wm" style="font-size:1.1rem">CLINIC <b>ELIA</b></div></div></div>
+<div class="band dark"><div class="lock"><svg width="64" height="64" style="--mb:#fff;--mf:#0F6B63"><use href="#mC"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div></div>
+<div class="lbl">Küçük ölçek</div>
+<div class="sizes">
+ <div><svg width="48" height="48" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg><span>48</span></div>
+ <div><svg width="32" height="32" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg><span>32</span></div>
+ <div><svg width="20" height="20" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg><span>20</span></div>
 </div></div>
 
-<p style="color:var(--slate);font-size:.9rem">Hepsi vektör (SVG) — her ölçüde net, dosya boyutu küçük. Seçtiğini header/footer/favicon/şemaya bağlar, istersen rengini veya yaprak açısını değiştiririm.</p>
+<div class="c"><h3>D · Monogram mühür — “CE”</h3>
+<p class="idea">Harf tabanlı klasik mühür. En “kurumsal/akademik” duran seçenek; hekim merkezli bir marka isteniyorsa uygun. Altındaki yay zeytin dalına gönderme.</p>
+<div class="band"><div class="lock"><svg width="64" height="64" style="--mb:#0F6B63;--mf:#fff"><use href="#mD"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div>
+ <svg width="52" height="52" style="--mb:#0A4F49;--mf:#fff"><use href="#mD"/></svg></div>
+<div class="band dark"><div class="lock"><svg width="64" height="64" style="--mb:#fff;--mf:#0F6B63"><use href="#mD"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div></div>
+<div class="lbl">Küçük ölçek</div>
+<div class="sizes">
+ <div><svg width="48" height="48" style="--mb:#0F6B63;--mf:#fff"><use href="#mD"/></svg><span>48</span></div>
+ <div><svg width="32" height="32" style="--mb:#0F6B63;--mf:#fff"><use href="#mD"/></svg><span>32</span></div>
+ <div><svg width="20" height="20" style="--mb:#0F6B63;--mf:#fff"><use href="#mD"/></svg><span>20</span></div>
+</div></div>
+
+<div class="c"><h3>E · Zeytin — yaprak + tane</h3>
+<p class="idea">Kapsız yaprak ve tek zeytin tanesi. En “Akdeniz” ve en sıcak duran seçenek; premium ama resmi olmayan bir ton verir.</p>
+<div class="band"><div class="lock"><svg width="64" height="64" style="--mb:#f7f9f9;--mf:#0F6B63"><use href="#mE"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div>
+ <div class="lock stack"><svg width="54" height="54" style="--mb:#f7f9f9;--mf:#0F6B63"><use href="#mE"/></svg><div class="wm" style="font-size:1.1rem">CLINIC <b>ELIA</b></div></div></div>
+<div class="band dark"><div class="lock"><svg width="64" height="64" style="--mb:#1a2b2a;--mf:#fff"><use href="#mE"/></svg><div><div class="wm">CLINIC <b>ELIA</b></div><div class="wms">Istanbul · Türkiye</div></div></div></div>
+<div class="lbl">Küçük ölçek</div>
+<div class="sizes">
+ <div><svg width="48" height="48" style="--mb:#f7f9f9;--mf:#0F6B63"><use href="#mE"/></svg><span>48</span></div>
+ <div><svg width="32" height="32" style="--mb:#f7f9f9;--mf:#0F6B63"><use href="#mE"/></svg><span>32</span></div>
+ <div><svg width="20" height="20" style="--mb:#f7f9f9;--mf:#0F6B63"><use href="#mE"/></svg><span>20</span></div>
+</div></div>
+
+<h2 class="sec">Yan yana — favicon ve avatar</h2>
+<div class="c">
+<div class="lbl">Tarayıcı sekmesi boyutu (16–32px)</div>
+<div class="sizes" style="gap:26px">
+ <div><svg width="32" height="32" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><span>A</span></div>
+ <div><svg width="32" height="30" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg><span>B</span></div>
+ <div><svg width="32" height="32" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg><span>C</span></div>
+ <div><svg width="32" height="32" style="--mb:#0F6B63;--mf:#fff"><use href="#mD"/></svg><span>D</span></div>
+ <div><svg width="32" height="32" style="--mb:#f7f9f9;--mf:#0F6B63"><use href="#mE"/></svg><span>E</span></div>
+</div>
+<div class="lbl">WhatsApp / sosyal profil (yuvarlak kırpma)</div>
+<div class="av">
+ <div class="avc" style="--mb:#0F6B63;--mf:#fff"><svg width="60" height="60" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg></div>
+ <div class="avc" style="background:#fff;border:1px solid var(--mist)"><svg width="40" height="38" style="--mf:#0F6B63;--mf2:#12857b"><use href="#mB"/></svg></div>
+ <div class="avc" style="background:#0A4F49"><svg width="46" height="46" style="--mb:#0A4F49;--mf:#fff"><use href="#mC"/></svg></div>
+ <div class="avc" style="--mb:#0F6B63"><svg width="60" height="60" style="--mb:#0F6B63;--mf:#fff"><use href="#mD"/></svg></div>
+ <div class="avc" style="background:#e4f1ee"><svg width="44" height="44" style="--mb:#e4f1ee;--mf:#0F6B63"><use href="#mE"/></svg></div>
+</div>
+<div class="note"><strong>Yuvarlak kırpma testi önemli:</strong> WhatsApp, Google ve sosyal medya profil görselini daireye kırpar. A ve D zaten dairesel olduğu için kayıpsız; B, C ve E’nin daire içinde nefes alması için ortalanıp küçültülmesi gerekir.</div>
+</div>
+
+<h2 class="sec">Gerçek kullanım (A ile)</h2>
+<div class="c">
+<div class="lbl">Tarayıcı sekmesi</div>
+<div class="bro" style="margin-bottom:22px">
+ <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  <div class="tab"><svg width="15" height="15" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg> Hair Transplant in Turkey | Clinic Elia</div></div>
+ <div class="hdr"><div class="lock"><svg width="38" height="38" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><div class="wm" style="font-size:1.02rem">CLINIC <b>ELIA</b></div></div>
+  <nav><span>Hair Transplant</span><span>Plastic Surgery</span><span>Aesthetics</span><span>Contact</span></nav></div>
+ <div style="padding:26px 18px;color:var(--slate);font-size:.84rem">Site başlığı bu şekilde görünür.</div>
+</div>
+<div class="lbl">Kartvizit</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap">
+ <div class="card t">
+  <svg width="40" height="40" style="--mb:#fff;--mf:#0F6B63"><use href="#mA"/></svg>
+  <div><div class="nm">Op. Dr. Ali Çetinkaya</div><div class="rl">Aesthetic, Plastic &amp; Reconstructive Surgery</div></div>
+ </div>
+ <div class="card" style="background:#fff;border:1px solid var(--mist)">
+  <div class="lock"><svg width="34" height="34" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><div class="wm" style="font-size:.95rem">CLINIC <b>ELIA</b></div></div>
+  <div class="ct" style="color:var(--slate)">info@clinicelia.com<br>Istanbul · Türkiye</div>
+ </div>
+</div>
+</div>
+
+<h2 class="sec">Renk sistemi</h2>
+<div class="c"><div class="grid">
+ <div class="sw" style="background:#fff"><svg width="46" height="46" style="--mb:#0F6B63;--mf:#fff"><use href="#mA"/></svg><span>Ana · teal</span></div>
+ <div class="sw" style="background:#0F6B63"><svg width="46" height="46" style="--mb:#fff;--mf:#0F6B63"><use href="#mA"/></svg><span style="color:#cfe3e0">Ters · zemin üstü</span></div>
+ <div class="sw" style="background:#1a2b2a"><svg width="46" height="46" style="--mb:#fff;--mf:#1a2b2a"><use href="#mA"/></svg><span style="color:#9fb3ae">Koyu zemin</span></div>
+ <div class="sw" style="background:#fff"><svg width="46" height="46" style="--mb:#1a2b2a;--mf:#fff"><use href="#mA"/></svg><span>Tek renk · siyah</span></div>
+ <div class="sw" style="background:#fff"><svg width="46" height="46" style="--mb:#54636b;--mf:#fff"><use href="#mA"/></svg><span>Gri tonlama</span></div>
+</div>
+<div class="note">Logo <strong>tek renkte de çalışmalı</strong> — kaşe, faks, gravür, tek renk baskı ve siyah-beyaz belgeler için. Beş konseptin hepsi bu testi geçiyor; gradyan veya gölge kullanılmadı.</div>
+</div>
+
+<h2 class="sec">Kullanım kuralları</h2>
+<div class="c">
+<table>
+ <tr><th>Kural</th><th>Değer</th></tr>
+ <tr><td>Minimum boyut (ekran)</td><td>A · C · D: <strong>16 px</strong> · B · E: <strong>24 px</strong></td></tr>
+ <tr><td>Minimum boyut (baskı)</td><td>8 mm yükseklik</td></tr>
+ <tr><td>Koruma alanı</td><td>Amblem yüksekliğinin <strong>yarısı</strong> kadar boşluk — hiçbir öğe bu alana girmez</td></tr>
+ <tr><td>Dosya biçimi</td><td>SVG (web) · PNG şeffaf 512px (sosyal) · ICO/PNG 16-32-48 (favicon)</td></tr>
+ <tr><td>Yazı tipi</td><td>“CLINIC” ince · “ELIA” kalın · harf aralığı geniş (0.06em)</td></tr>
+</table>
+<div class="lbl">Yapılır / yapılmaz</div>
+<div class="don">
+ <div class="ok"><b>✓ Tek renk</b>Kaşe ve faksta çalışır</div>
+ <div class="ok"><b>✓ Ters kullanım</b>Koyu zeminde beyaz</div>
+ <div class="ok"><b>✓ Sadece amblem</b>Avatar ve favicon</div>
+ <div class="no"><b>✕ Orantı bozma</b>Yatay/dikey esnetme</div>
+ <div class="no"><b>✕ Gölge/gradyan</b>Efekt eklenmez</div>
+ <div class="no"><b>✕ Yoğun foto üstü</b>Okunurluk düşer</div>
+</div>
+</div>
+
+<p style="color:var(--slate);font-size:.88rem;margin-top:26px">Hepsi vektör (SVG) — her ölçüde net, dosya birkaç yüz bayt, gradyan/efekt yok. Seçilen konsept header, footer, favicon, OG görseli ve <code>Organization</code> şemasındaki <code>logo</code> alanına bağlanır.</p>
 </div></body></html>
